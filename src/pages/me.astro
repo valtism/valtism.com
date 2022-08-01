@@ -1,0 +1,18 @@
+---
+import { Image } from "@astrojs/image/components";
+import profile from "../assets/profile.jpeg";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Dan Wood">
+  <div class="flex min-h-screen w-screen items-center justify-center">
+    <Image
+      src={profile}
+      alt="Dan Wood"
+      width={1000}
+      height={1000}
+      format={"jpeg"}
+      class="w-[500px] rounded-md max-w-full aspect-auto"
+    />
+  </div>
+</Layout>

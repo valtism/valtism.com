@@ -1,6 +1,5 @@
 ---
 import { Image } from "@astrojs/image/components";
-import github from "../assets/github.svg";
 
 export interface Props {
   title: string;
@@ -55,8 +54,8 @@ const { href, title, body, image, githubUrl } = Astro.props;
     <a href={href} class="mt-1 flex-shrink-0">
       <Image
         src={image}
-        width={200}
-        height={200}
+        width={160}
+        height={160}
         class="rounded-lg border-2 border-white/30 w-20 h-20"
       />
     </a>
