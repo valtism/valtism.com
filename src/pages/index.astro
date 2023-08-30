@@ -1,5 +1,6 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
+
 import profile from "../assets/profile.jpeg";
 import resume from "../assets/resume.png";
 import albumCharter from "../assets/album-charter.png";
@@ -22,9 +23,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
     >
       <header class="relative flex items-center justify-between">
         <div class="flex flex-col">
-          <h1 class="text-4xl font-bold whitespace-nowrap mb-1">
-            Dan Wood
-          </h1>
+          <h1 class="text-4xl font-bold whitespace-nowrap mb-1">Dan Wood</h1>
           <div class="flex items-center gap-2">
             <span class="text-gray-400 text-xl tracking-wider">@valtism</span>
             <a
@@ -86,6 +85,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
           href="https://resume.valtism.com"
           githubUrl="https://github.com/valtism/resume"
           image={resume}
+          imageAlt="Terminal resume"
           title="Terminal Résumé"
           body="An implemendation of my resume in my terminal setup"
         />
@@ -93,6 +93,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
           href="https://albumcharter.com"
           githubUrl="https://github.com/valtism/music-list"
           image={albumCharter}
+          imageAlt="Album Charter"
           title="Album Charter"
           body="Create your own top album charts with drag-and-drop and high quality exports"
         />
@@ -100,6 +101,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
           href="https://sicg.valtism.com"
           githubUrl="https://github.com/valtism/climb-tags"
           image={sicg}
+          imageAlt="Climg Tags"
           title="Climb Tags"
           body="Creator for climbing routes markers for Sydney Indoor Climbing Gym"
         />
@@ -107,6 +109,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
           href="https://tictactoe.valtism.com"
           githubUrl="https://github.com/valtism/ultimate-tic-tac-toe"
           image={ttt}
+          imageAlt="Ultimate Tic Tac Toe"
           title="Ultimate Tic Tac Toe"
           body="Game implementation of Ultimate Tic Tac Toe"
         />
@@ -114,6 +117,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
           href="https://best-of-decade.netlify.app"
           githubUrl="https://github.com/valtism/best-of-decade"
           image={decade}
+          imageAlt="Best albums of the 2010s"
           title="Best albums of the 2010s"
           body="Site I made with my favourite albums of the 2010s"
         />
@@ -121,6 +125,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
           href="https://unsong.valtism.com"
           githubUrl="https://github.com/valtism/unsong-contentlayer"
           image={unsong}
+          imageAlt="Unsong"
           title="Unsong"
           body="An implementation of Unsong by Scott Alexander in a nicely formatted webpage"
         />
@@ -128,6 +133,7 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
           href="https://waves.valtism.com"
           githubUrl="https://github.com/valtism/waves"
           image={waves}
+          imageAlt="Waves"
           title="Waves"
           body="Animated SVG waves, using KUTE.js"
         />
