@@ -11,14 +11,11 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^5.0.0",
-    "@typescript-eslint/parser": "^6.5.0",
-    "astro": "^3.0.2",
-    "eslint": "^8.48.0",
-    "eslint-plugin-astro": "^0.29.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.0",
-    "sharp": "^0.32.5"
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "6.0.5",
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.1"
   }
 }

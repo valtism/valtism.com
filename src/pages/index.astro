@@ -12,8 +12,6 @@ import waves from "../assets/waves.png";
 
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-
-const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
 ---
 
 <Layout title="Dan Wood">
@@ -78,7 +76,11 @@ const colorHeading = "uppercase tracking-widest font-bold text-fuchsia-400";
         </p>
       </div>
 
-      <h2 class={`mt-2 sm:mt-6 ${colorHeading}`}>Personal Projects</h2>
+      <h2
+        class="mt-2 sm:mt-6 uppercase tracking-widest font-bold text-fuchsia-400"
+      >
+        Personal Projects
+      </h2>
 
       <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 md:gap-8">
         <Card
